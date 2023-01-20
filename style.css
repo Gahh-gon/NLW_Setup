@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*ele vai desconsiderar os prenchimentos internos no calculo (jeito normal 100 + 20 = 120 com ele so vai ser 100 a largura com espaçamento)*/
+}
+
+body {
+  background-color: #09090a;
+  color: white;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /*Vai pegar toda lagurar header e vai justificar o conteudo colocando espaço entre  os elemetos*/
+  padding: 48px;
+  position: fixed; /*deixa elemento fixio na tela quando e usando possicionamento diferete do normal e como se subisse uma andar e como se ele não ocupasse o mmesmo lugar que antes */
+  width: 100%; /*Quando ficou fixio seu tamanho lateral mudou estou usando para completar a tela*/
+  background-color: #09090a;
+}
+
+button {
+  padding: 16px 24px; /*em cima é baixo com 16 e dos lados 24*/
+  border-radius: 8px;
+  border: 1px solid #8b5cf6;
+  background-color: transparent;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+
+  display: flex; /*é a disposição dos elemento dentro de um elemento */
+  align-items: center;
+  gap: 12px; /*Faz o espaço entre elementos*/
+}
+
+form {
+  display: flex;
+  padding: 182px 48px 48px; /*primeira parte e a de cima a seguda e das laterais e a ultima e para baixo */
+  width: fit-content; /*esta encaixado o conteudo na largura*/
+}
+.habits {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 58px;
+}
+.habit {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+  align-items: center; /*---*/
+  justify-content: center; /*|*/
+}
+.days {
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+}
+.day {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 24px;
+}
+.day div {
+  margin-bottom: 8px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  line-height: 125%;
+  color: #a1a1aa;
+  text-align: center;
+}
+
+input {
+  appearance: none; /*Tira a aparecia*/
+  -webkit-appearance: none; /*E o prefixo e usando para alguns navegadores entederem*/
+  width: 64px;
+  height: 64px;
+  border: solid 2px #27272a;
+  background-color: #18181b;
+}
+/*pseundo-selector*/
+input:checked {
+  /*Quando estiver marcado*/
+  border: #a78bfa;
+  background-color: #8b5cf6;
+}
+/* Uma regra css*/
+@media (max-width: 578px) {
+  /* de 0 ate 578 vai ocorrer alguma mudança*/
+  button div {
+    display: none;
+  }
+}
