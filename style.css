@@ -39,23 +39,25 @@ button {
   align-items: center;
   gap: 12px; /*Faz o espaço entre elementos*/
 }
-
 .perfil {
-  padding-right: 10px;
   display: flex;
-  align-items: center;
+  position: fixed;
+  padding-top: 140px;
+}
+.perfil div {
+  display: flex;
   flex-direction: row;
-}
-.perfil img {
-  width: 90px;
-}
-.perfil a {
+  justify-content: center;
+  align-items: center;
   font-family: "Inter", sans-serif;
+}
+.perfil div img {
+  width: 50px;
 }
 
 form {
   display: flex;
-  padding: 148px 48px 48px; /*primeira parte e a de cima a seguda e das laterais e a ultima e para baixo */
+  padding: 190px 48px 48px; /*primeira parte e a de cima a seguda e das laterais e a ultima e para baixo */
   width: fit-content; /*esta encaixado o conteudo na largura*/
 }
 .habits {
