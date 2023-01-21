@@ -40,9 +40,22 @@ button {
   gap: 12px; /*Faz o espaço entre elementos*/
 }
 
+.perfil {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.perfil img {
+  width: 90px;
+}
+.perfil a {
+  font-family: "Inter", sans-serif;
+}
+
 form {
   display: flex;
-  padding: 182px 48px 48px; /*primeira parte e a de cima a seguda e das laterais e a ultima e para baixo */
+  padding: 148px 48px 48px; /*primeira parte e a de cima a seguda e das laterais e a ultima e para baixo */
   width: fit-content; /*esta encaixado o conteudo na largura*/
 }
 .habits {
